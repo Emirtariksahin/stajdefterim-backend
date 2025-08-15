@@ -13,10 +13,10 @@ const app = express();
 // Initialize Supabase client
 const supabase = createClient(config.SUPABASE_URL, config.SUPABASE_ANON_KEY);
 
-// Rate limiting - Environment'a göre ayarlanmış
+// Rate limiting - Development için gevşetilmiş
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: process.env.NODE_ENV === 'production' ? 100 : 1000, // Production'da daha sıkı
+  max: 1000, // limit each IP to 1000 requests per windowMs (development için artırıldı)
   message: {
     success: false,
     error: 'Too many requests from this IP, please try again later.',

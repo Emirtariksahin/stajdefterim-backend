@@ -1,6 +1,6 @@
 // Supabase Configuration
-const SUPABASE_URL = process.env.SUPABASE_URL || 'https://zuxwqlsymswmwijneoqg.supabase.co';
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp1eHdxbHN5bXN3bXdpam5lb3FnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQzOTE4NTIsImV4cCI6MjA2OTk2Nzg1Mn0.XqKb43xM3bgqjtjV6qKXX1NkOiv5XGWZfjTwyGkeOWc';
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY ;
 // Service role key for backend operations (bypasses RLS)
 // TODO: Replace with your actual service_role key from Supabase Dashboard
 const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY || 'YOUR_ACTUAL_SERVICE_ROLE_KEY_HERE';
